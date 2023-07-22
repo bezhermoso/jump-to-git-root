@@ -1,14 +1,18 @@
 # jump-to-git-root
-Simple shell utility to jump back to a Git repo's project root
 
-## Usage
+Simple shell utility to jump back to the Git repo's root directory.
 
-Clone this repository. In your `.bashrc` (or equivalent) file:
+Can pierce through submodule: when already at a submodule's root directory, invoking it
+will jump you to the parent repo's root directory.
+
+## Setup
+
+Clone this repository. In your `.zshrc` file:
 
 ```sh
 # Import the `jump-to-git-root` function:
 source "~/path/to/this/repo/jump-to-git-root.sh"
 
-# Optional: make a short alias to it:
+# RECOMMENDED: Assign to a short alias:
 alias gr=jump-to-git-root
 ```
