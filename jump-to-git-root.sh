@@ -17,9 +17,10 @@ function jump-to-git-root {
     # If so, cd to nearest Git parent project.
     _root_dir=$(git -C $(dirname $_pwd) rev-parse --show-toplevel 2>/dev/null)
     if [[ -z $_root_dir ]]; then
-      echo "Already at Git repo root."
+      >&2 echo "Already at Git repo root, and no more Git repos beyond this point."
       return 0
     fi
+    >&2 echo -n "Piercing through submodule..."
   fi
   # Make `cd -` work.
   OLDPWD=$_pwd
