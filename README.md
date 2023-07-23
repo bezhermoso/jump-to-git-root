@@ -10,7 +10,7 @@ will jump you to the parent repo's root directory.
 Clone this repository:
 
 ```sh
-git clone git@github.com:bezhermoso/jump-to-git-root.git /usr/local/share
+git clone https://github.com/bezhermoso/jump-to-git-root.git /usr/local/share
 
 ```
 
