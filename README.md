@@ -7,11 +7,18 @@ will jump you to the parent repo's root directory.
 
 ## Setup
 
-Clone this repository. In your `.zshrc` file:
+Clone this repository:
+
+```sh
+git clone git@github.com:bezhermoso/jump-to-git-root /usr/local/share
+
+```
+
+ Then in your `.zshrc` file:
 
 ```sh
 # Import the `jump-to-git-root` function:
-source "~/path/to/this/repo/jump-to-git-root.sh"
+source "/usr/local/share/jump-to-git-root/init.sh"
 
 # RECOMMENDED: Assign to a short alias:
 alias gr=jump-to-git-root
