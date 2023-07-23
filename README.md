@@ -18,7 +18,7 @@ git clone https://github.com/bezhermoso/jump-to-git-root.git /usr/local/share
 
 ```sh
 # Import the `jump-to-git-root` function:
-source "/usr/local/share/jump-to-git-root/init.sh"
+source "/usr/local/share/jump-to-git-root/init.zsh"
 
 # RECOMMENDED: Assign to a short alias:
 alias gr=jump-to-git-root
